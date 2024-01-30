@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guess Who</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    {
+        box-sizing: border-box;
+    }
+    /* Set additional styling options for the columns*/
+    .column {
+    float: left;
+    }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>	
+</head>
+
+<body>
+  <div class="main-content">
+	
+    <!-- Your character -->
+    <div class="sidebar">
+      <div class="container">
+        <div id="me"></div>
+        <h3 id="name"></h3>
+        <div class="tracker">
+          <p>More Games</p>
+		  
+		  <div class="row">
+		  <div class="column">
+		<a href="file:///C:/Users/jspre/Desktop/Guess%20Who/index.html">
+			<img border="0" alt="Button1" src="img/button1.jpg" width="45" height="45"></a>
+			</div>
+			<div class="column">
+		<a href="file:///C:/Users/jspre/Desktop/Guess%20Who/index2.html">
+			<img border="0" alt="Button2" src="img/button2.jpg" width="45" height="45"></a>
+			</div>
+			<div class="column">
+		<a href="file:///C:/Users/jspre/Desktop/Guess%20Who/index3.html">
+			<img border="0" alt="Button3" src="img/button3.jpg" width="45" height="45"></a>
+			</div>
+			</div>
+       
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Board -->
+    <div id="gameboard"></div>
+    <img style="display:none;" src="img/nope.jpg">
+  </div>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/game2.js"></script>
+</body>
+</html>
