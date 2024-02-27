@@ -3,8 +3,18 @@
   padding: 0;
 }
 
+.column {
+  float: left;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 @font-face {
-	font-family: 'Montserrat';
+    font-family: 'Montserrat';
     src: url('../fonts/montserrat.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
@@ -61,11 +71,6 @@ img {
   margin-left: 10px;
 }
 
-#score {
-  padding-bottom: 80px;
-  font-size: 36px;
-}
-
 button {
   font-family: 'Montserrat';
   padding: 10px;
@@ -78,14 +83,6 @@ button {
   transition: .5s;
   border: none;
   box-shadow: 1px 1px 10px #5c3232;
-}
-
-button:focus {
-  outline: none;
-}
-
-button:hover {
-  transform: scale(1.15);
 }
 
 #gameboard {
