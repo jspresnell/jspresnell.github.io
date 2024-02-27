@@ -1,10 +1,3 @@
-// Loader
-$(window).on('load', function(){
-  setTimeout(function(){
-    $('.loader').fadeOut();
-  }, 1500)
-})
-
 // Characters
 var pics = ["al.jpg", "amy.jpg", "ben.jpg", "carmen.jpg", "daniel.jpg", "david.jpg", "emma.jpg", "eric.jpg", "farah.jpg", "gabe.jpg", "joe.jpg", "jordan.jpg", "katie.jpg", "laura.jpg", "leo.jpg", "lily.jpg", "liz.jpg", "mia.jpg", "mike.jpg", "nick.jpg", "olivia.jpg", "rachel.jpg", "sam.jpg", "sophia.jpg"];
 
@@ -21,7 +14,6 @@ function myCharacter(){
 
 myCharacter();
 
-
 //Game Board
 function shuffle() {
   pics.sort(function(a, b){return 0.5 - Math.random()});
@@ -35,39 +27,3 @@ shuffle();
 $("#gameboard").on('click', '.card', function(){
   $(this).toggleClass("flipped");
 });
-
-// Game Tracker
-var win = 0;
-var loss = 0;
-
-$('#score').html(win + ' - ' + loss);
-
-function updateScore(win, loss) {
-  $('#score').html(win + ' - ' + loss);
-}
-
-
-$('#win').click(function(){
-  //win+=1;
-  //updateScore(win, loss);
-  //reset();
-})
-
-$('#loss').click(function(){
-  loss+=1;
-  updateScore(win, loss);
-  reset();
-})
-
-// Reset Game Board
-
-function reset(){
-  var play = confirm('Do you want to play again?');
-  if (play == true){
-    $('#gameboard').html('');
-    myCharacter();
-    shuffle();
-  } else {
-    alert('Thanks for playing!');
-  }
-}
