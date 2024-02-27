@@ -1,10 +1,3 @@
-// Loader
-$(window).on('load', function(){
-  setTimeout(function(){
-    $('.loader').fadeOut();
-  }, 1500)
-})
-
 // Characters
 var pics = ["aayla.jpg", "anakin.jpg", "battle droid.jpg", "c3po.jpg", "clone.jpg", "cody.jpg", "dooku.jpg", "grievous.jpg", "gunray.jpg", "jango.jpg", "jarjar.jpg", "kit.jpg", "mace.jpg", "maul.jpg", "nass.jpg", "obi-wan.jpg", "padme.jpg", "sidious.jpg", "quigon.jpg", "r2-d2.jpg", "shmi.jpg", "super battle droid.jpg", "watto.jpg", "cgi yoda.jpg"];
 
@@ -21,7 +14,6 @@ function myCharacter(){
 
 myCharacter();
 
-
 //Game Board
 function shuffle() {
   pics.sort(function(a, b){return 0.5 - Math.random()});
@@ -35,39 +27,3 @@ shuffle();
 $("#gameboard").on('click', '.card', function(){
   $(this).toggleClass("flipped");
 });
-
-// Game Tracker
-var win = 0;
-var loss = 0;
-
-$('#score').html(win + ' - ' + loss);
-
-function updateScore(win, loss) {
-  $('#score').html(win + ' - ' + loss);
-}
-
-
-$('#win').click(function(){
-  //win+=1;
-  //updateScore(win, loss);
-  //reset();
-})
-
-$('#loss').click(function(){
-  loss+=1;
-  updateScore(win, loss);
-  reset();
-})
-
-// Reset Game Board
-
-function reset(){
-  var play = confirm('Do you want to play again?');
-  if (play == true){
-    $('#gameboard').html('');
-    myCharacter();
-    shuffle();
-  } else {
-    alert('Thanks for playing!');
-  }
-}
