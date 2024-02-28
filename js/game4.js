@@ -9,7 +9,8 @@ function myCharacter(){
 
   var name = pics[myPic].substr(0, pics[myPic].lastIndexOf("."))
   name = name.charAt(0).toUpperCase() + name.slice(1);
-  $("#name").html('You are ' + name);
+  $("#name").html('You ');
+  //$("#name").html('You are ' + name);
 }
 
 myCharacter();
