@@ -1,5 +1,5 @@
 // Characters
-var pics = ["drake.jpg", "john.jpg", "mia meme.jpg", "mj.jpg", "muhammad.jpg", "pj kid.jpg", "rick.jpg", "taylor.jpg", "brian.jpg", "chloe.jpg", "drew.jpg", "gavin.jpg", "giorgio.jpg", "harold.jpg", "michael.jpg", "nicholas.jpg", "nick meme.jpg", "reece.jpg", "renata.jpg", "salt bae.jpg", "sam meme.jpg", "silvia.jpg", "steve meme.jpg", "zoe.jpg"];
+var pics = ["drake.jpg", "johncena.jpg", "mia meme.jpg", "mj.jpg", "muhammad.jpg", "pj kid.jpg", "rick.jpg", "taylor.jpg", "brian.jpg", "chloe.jpg", "drew.jpg", "gavin.jpg", "giorgio.jpg", "harold.jpg", "michael.jpg", "nicholas.jpg", "nick meme.jpg", "reece.jpg", "renata.jpg", "salt bae.jpg", "sam meme.jpg", "silvia.jpg", "steve meme.jpg", "zoe.jpg"];
 
 //My Guess Who Character
 function myCharacter(){
