@@ -29,7 +29,7 @@
 }
 
 body {
-  background-image: url('../imgs/bg1.jpg');
+  background-image: url('../img/bg1.jpg');
   background-repeat: repeat;
   background-size: cover;
 }
@@ -132,7 +132,7 @@ h1 {
 }
 
 .card {
-  background-image: url('../imgs/nope.jpg');
+  background-image: url('../img/nope.jpg');
   background-size: cover;
   width: 80px;
   height: 80px;
