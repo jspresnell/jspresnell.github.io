@@ -1,21 +1,21 @@
 function changeImage()
 {
 var img = document.getElementById("image");
-img.src="imgs/list1.jpg";
+img.src="img/list1.jpg";
 return false;
 }
 
 function changeImage2()
 {
 var img = document.getElementById("image");
-img.src="imgs/list2.jpg";
+img.src="img/list2.jpg";
 return false;
 }
 
 function changeImage3()
 {
 var img = document.getElementById("image");
-img.src="imgs/list3.jpg";
+img.src="img/list3.jpg";
 return false;
 }
 
@@ -135,3 +135,4 @@ function setCircleDasharray() {
     .getElementById("base-timer-path-remaining")
     .setAttribute("stroke-dasharray", circleDasharray);
 }
+
