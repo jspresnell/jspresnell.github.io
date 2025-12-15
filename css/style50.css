@@ -29,7 +29,7 @@
 }
 
 body {
-  background-image: url(img/bg1.jpg);
+  background-image: url('../img/bg3.jpg');
   background-repeat: repeat;
   background-size: cover;
 }
