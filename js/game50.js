@@ -5,7 +5,7 @@ var pics = ["game1.jpg", "game2.jpg", "game3.jpg", "game4.jpg", "game5.jpg", "ga
 function myCharacter(){
   var myPic = Math.floor(Math.random() * pics.length);
 
-  $("#me").html('<img src="imgs/' + pics[myPic] + ' ">');
+  $("#me").html('<img src="img/' + pics[myPic] + ' ">');
 
   var name = pics[myPic].substr(0, pics[myPic].lastIndexOf("."))
   name = name.charAt(0).toUpperCase() + name.slice(1);
@@ -35,3 +35,4 @@ function decrement() {
 	}
     document.getElementById("counting").innerText = data;
 }
+
